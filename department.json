@@ -1,0 +1,52 @@
+[
+	{
+		"departmentId": "10",
+		"deptName": "HR",
+		"deptLocation": "Chennai"
+	},
+	{
+		"departmentId": "20",
+		"deptName": "Trainee",
+		"deptLocation": "Bangalore"
+	},
+	{
+		"departmentId": "30",
+		"deptName": "ProjectManager",
+		"deptLocation": "Pune"
+	},
+	{
+		"departmentId": "40",
+		"deptName": "VP",
+		"deptLocation": "Chennai"
+	},
+	{
+		"departmentId": "50",
+		"deptName": "BoD",
+		"deptLocation": "Chennai"
+	},
+	{
+		"departmentId": "60",
+		"deptName": "Trainer",
+		"deptLocation": "Kochhi"
+	},
+	{
+		"departmentId": "70",
+		"deptName": "Finance",
+		"deptLocation": "New Delhi"
+	},
+	{
+		"departmentId": "80",
+		"deptName": "Associate",
+		"deptLocation": "Chennai"
+	},
+	{
+		"departmentId": "90",
+		"deptName": "Senior Associate",
+		"deptLocation": "Mumbai"
+	},
+	{
+		"departmentId": "100",
+		"deptName": "HR",
+		"deptLocation": "Kolkata"
+	}
+]

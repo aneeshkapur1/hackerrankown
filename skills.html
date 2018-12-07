@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+
+<script>
+
+function get(url) {
+	  // Return a new promise.
+	  return new Promise(function(resolve, reject) {
+	    // Do the usual XHR stuff
+	    var req = new XMLHttpRequest();
+	    req.open('GET', url);
+
+	    req.onload = function() {
+	        // Resolve the promise with the response text
+	        resolve(req.responseText);
+	    };
+
+	    // Handle network errors
+	    req.onerror = function() {
+	      reject(Error("Network Error"));
+	    };
+
+	    // Make the request
+	    req.send();
+	  });
+	}
+
+
+
+
+
+
+get('http://localhost:9090/Payroll/department.json').then(function(response) {
+	 var departments = JSON.parse(response);
+
+	 console.log(departments);
+	 console.log(departments.length);
+	 
+	 
+	 /* //read data from response and first store in table
+	 var deptQuery="<table border='2'><tr><th>Dept Id</th><th>Dept Name</th><th>Dept Location</th></tr>";
+	 
+	 for(var i=0;i<departments.length;i++)
+	 {
+		deptQuery=deptQuery+"<tr><td>"+departments[i]['departmentId']+"</td><td>"+departments[i]['deptName']+"</td><td>"+departments[i]['deptLocation']+"</td></tr>";
+	 
+	 }
+	 
+	 $("#deptdata").html(deptQuery+"</table>");	  */
+	 
+	 var deptQuery="<select name='department'>";
+	 
+	 for(var i=0;i<departments.length;i++)
+	 {
+		deptQuery=deptQuery+"<option value="+departments[i]['departmentId']+">"+departments[i]['deptName']+"</option>";
+		//console.log(i+" "+deptQuery);
+	 
+	 }
+	 $("#deptdata").html(deptQuery+"</select>");	
+	 
+	}, function(error) {
+	  console.error(error);
+	});
+	
+	
+get('http://localhost:9090/Payroll/skills.json').then(function(response) {
+	 var skills = JSON.parse(response);
+	 //read data from response and first store in table
+	 
+	/* var skillQuery="<table border='2'><tr><th>Skill Id</th><th>Skill Name</th></tr>";
+			 
+	 
+	 for(var i=0;i<skills.length;i++)
+	 {
+		skillQuery=skillQuery+"<tr><td>"+skills[i]["skillId"]+"</td><td>"+skills[i]["skillName"]+"</td></tr>";
+	 
+	 }
+	 
+	 $("#skillsdata").html(skillQuery+"</table>");	  */
+	 
+	 
+var skillQuery="<select name='department'>";
+	 
+	 for(var i=0;i<skills.length;i++)
+	 {
+		 skillQuery=skillQuery+"<option value="+skills[i]['skillId']+">"+skills[i]['skillName']+"</option>";
+		//console.log(i+" "+deptQuery);
+	 
+	 }
+	 $("#skillsdata").html(skillQuery+"</select>");	
+	 
+	}, function(error) {
+	  console.error(error);
+	});
+	 
+	 
+	 
+	 
+
+</script>
+
+<style>
+.headers{
+color:fuchsia;
+text-align: center;
+font-weight: 600;
+}
+</style>
+
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<table>
+<tr><td><div class="headers">Select department</div></td></tr>
+<tr><td><div id="deptdata"></div></td></tr>
+<tr><td><div class="headers">Select Skills</div></td></tr>
+<tr><td><div id="skillsdata"></div></td></tr>
+
+</table>
+</body>
+</html>

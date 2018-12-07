@@ -1,0 +1,42 @@
+[
+	{
+		"skillId": "1",
+		"skillName": "Core Java"
+	},
+	{
+		"skillId": "2",
+		"skillName": "Adv Java"
+	},
+	{
+		"skillId": "3",
+		"skillName": "HTML and CSS"
+	},
+	{
+		"skillId": "4",
+		"skillName": "SpringMVC"
+	},
+	{
+		"skillId": "5",
+		"skillName": "JavaScript"
+	},
+	{
+		"skillId": "6",
+		"skillName": "JQuery"
+	},
+	{
+		"skillId": "7",
+		"skillName": "Angular"
+	},
+	{
+		"skillId": "8",
+		"skillName": "Bootstrap"
+	},
+	{
+		"skillId": "9",
+		"skillName": "JSON n Rest APIs"
+	},
+	{
+		"skillId": "10",
+		"skillName": "CPP"
+	}
+]

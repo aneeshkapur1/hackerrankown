@@ -1,0 +1,64 @@
+{
+	"employees": {
+		"employee": [
+			{
+				"empId": "1234",
+				"empName": "Rishika Kiran",
+				"empSalary": "5000000",
+				"department": {
+					"departmentID": "1",
+					"deptName": "Computer Science",
+					"deptLocation": "Chennai"
+				},
+				"address": {
+					"addressId": "1",
+					"street": "mountbatten",
+					"city": "Chennai",
+					"state": "TN",
+					"country": "India"
+				},
+				"skills": {
+					"skill": [
+						{
+							"skillId": "1",
+							"skillName": "C"
+						},
+						{
+							"skillId": "4",
+							"skillName": "java"
+						}
+					]
+				}
+			},
+			{
+				"empId": "1112",
+				"empName": "Kirtee Kiran",
+				"empSalary": "1300000",
+				"department": {
+					"departmentID": "2",
+					"deptName": "Food Tech",
+					"deptLocation": "Bangalore"
+				},
+				"address": {
+					"addressId": "11",
+					"street": "mountbatten 4th",
+					"city": "Chennai",
+					"state": "TN",
+					"country": "India"
+				},
+				"skills": {
+					"skill": [
+						{
+							"skillId": "2",
+							"skillName": "php"
+						},
+						{
+							"skillId": "3",
+							"skillName": "java"
+						}
+					]
+				}
+			}
+		]
+	}
+}

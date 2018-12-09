@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
 
 <script>
@@ -103,9 +104,10 @@ var skillQuery="<select name='department'>";
 
 <style>
 .headers{
-color:fuchsia;
+font-size:30px;
+color:blue;
 text-align: center;
-font-weight: 600;
+font-weight: bold;
 }
 </style>
 
@@ -115,9 +117,21 @@ font-weight: 600;
 <body>
 <table>
 <tr><td><div class="headers">Select department</div></td></tr>
-<tr><td><div id="deptdata"></div></td></tr>
+<tr><td>
+<div class="dropdown">
+  <button class="btn btn-primary dropdown-toggle" type="button" id="deptdata" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Select Department
+  </button>
+</div>
+</td></tr>
 <tr><td><div class="headers">Select Skills</div></td></tr>
-<tr><td><div id="skillsdata"></div></td></tr>
+<tr><td>
+<div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="skillsdata" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Select Skills
+  </button>
+  </div>
+</td></tr>
 
 </table>
 </body>
